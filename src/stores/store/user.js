@@ -83,6 +83,7 @@ const actions = {
       .catch(e => console.log(e));
   },
   editProfile({ state, commit }, user) {
+    console.log(user);
     if (
       state.user.income != user.income ||
       state.user.fName != user.fName ||
@@ -100,7 +101,8 @@ const actions = {
             commit("setDetails", {
               ...data,
               email: state.user.email,
-              idToken: state.user.token
+              idToken: state.user.token,
+              id: state.user.id
             });
           }
         })

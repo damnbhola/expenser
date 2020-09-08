@@ -3,7 +3,7 @@
     <section class="container mt-5 mb-5">
       <div class="row">
         <label for="fName" class="col-md-2">First Name:</label>
-        <input type="text" id="fName" class="form-control col-md-6" v-model="user.fName" />
+        <input type="text" id="fName" class="form-control col-md-6" v-model="fName" />
       </div>
       <div class="row">
         <label for="lName" class="col-md-2">Last Name:</label>
